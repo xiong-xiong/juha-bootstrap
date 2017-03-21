@@ -1,0 +1,56 @@
+/*
+Theme Name: Juha bootstrap
+Theme URI: http://juhastenroos.fi
+Author: Juha Stenroos
+Author URI: http://juhastenroos.fi
+Description: Juhastenroos.fi teema
+Version: 1.0
+*/
+/*
+
+xx      xx    xx    xxxxxxxx    xxx     xx   xxxxxxxxx
+ xx    xx     xx    xx    xx    xxxx    xx   xx
+  xx  xx      xx    xx    xx    xx xx   xx   xx
+   xxxx       xx    xx    xx    xx  xx  xx   xx   xxxx
+  xx  xx      xx    xx    xx    xx   xx xx   xx     xx
+ xx    xx     xx    xx    xx    xx    xxxx   xx     xx
+xx      xx    xx    xxxxxxxx    xx     xxx   xxxxxxxxx
+
+xx      xx    xx    xxxxxxxx    xxx     xx   xxxxxxxxx
+ xx    xx     xx    xx    xx    xxxx    xx   xx
+  xx  xx      xx    xx    xx    xx xx   xx   xx
+   xxxx       xx    xx    xx    xx  xx  xx   xx   xxxx
+  xx  xx      xx    xx    xx    xx   xx xx   xx     xx
+ xx    xx     xx    xx    xx    xx    xxxx   xx     xx
+xx      xx    xx    xxxxxxxx    xx     xxx   xxxxxxxxx    
+
+
+                _     _     ||
+               (o\---/o)    || 
+                ( - - )    |xx|
+               _( (T) )_ __|__|__
+              / /     \ \/ / 
+             / /       \__/
+             \_)       / 
+               \   _  /
+               _)  |  (_
+              (___,'.___)
+
+*/
+
+/*
+COLORS
+Color name: #
+Color name: #
+Color name: #
+*/
+
+@import url("css/normalize.css");
+@import url("css/bootstrap.css");
+@import url("css/font-awesome.min.css");
+@import url("css/global.css");
+@import url("css/navigaatio.css");
+@import url("css/footer.css");
+@import url("css/single.css");
+@import url("css/etusivu.css");
+

@@ -1,0 +1,98 @@
+@charset "utf-8"
+
+@import "muuttujat.sass"
+
+.ikonit
+	font-size: 40px
+	left: 10px
+	position: absolute
+	bottom: 10px
+	left: 2vw
+	i 
+		&:hover
+			color: $musta
+	@media only screen and (max-width: $bp-navi)
+		position: relative
+
+.paanavi
+	background: white
+	height: 100vh
+	width: 20%
+	position: fixed
+	top: 0
+	left: 0
+	padding: 40px 20px 
+	z-index: 95
+	overflow: hidden
+	h1
+		margin-top: 30px
+	@media only screen and (max-width: 750px)
+		overflow: scroll
+	.nav-wrap
+		margin-top: 50px
+		@media only screen and (max-width: $bp-navi)
+			margin-top: 25px
+		@media only screen and (min-width: 1800px)
+			margin-top: 150px
+		.main-nav
+			ul
+				list-style: none
+				text-transform: uppercase
+				font-size: 17px
+				font-family: $valikkofontti
+				padding: 0
+				li
+					margin: 10px 0px 
+					a
+						padding: 10px
+						width: 100%
+						display: block
+						color: $musta
+						&:hover
+							text-decoration: none
+							color: $musta
+							background: $harmaa
+	@media only screen and (max-width: $bp-navi)
+		width: 40%
+		display: none
+	@media only screen and (max-width: $bp-mobiili)
+		width: 80%
+
+.current-menu-item
+	a
+		text-decoration: none
+		color: $musta !important
+		background: $harmaa
+
+
+.menu-open 
+	font-size: 40px
+	position: fixed
+	top: 20px
+	left: 20px
+	z-index: 99
+	background: $tumma
+	color: $white
+	width: 60px
+	height: 60px
+	line-height: 60px
+	text-align: center
+	display: none
+	cursor: pointer
+	border-radius: 35px
+	@media only screen and (max-width: $bp-navi)
+		display: inline
+
+html body #qtranslate-2-chooser
+	list-style: none
+	text-align: right
+	font-family: $valikkofontti
+	text-transform: uppercase
+	font-size: 12px
+	li 
+		display: inline
+	li:nth-child(1)
+		&:after
+			content: " | "
+	.active
+		font-family: $paaotsikkofontti		

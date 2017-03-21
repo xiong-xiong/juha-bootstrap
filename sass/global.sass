@@ -1,0 +1,151 @@
+@charset "utf-8"
+
+@import "muuttujat.sass"
+
+body
+	background: url('img/konton.jpg')
+	background-size: fit
+	background-attachment: fixed
+	background-repeat: no-repeat
+	font-size: 15px
+	background-position: center
+	z-index: 1
+	@media only screen and (min-width: 1800px)
+		font-size: 19px
+
+a 
+	color: $tumma
+	text-decoration: none
+	&:hover, &:active, &:focus
+		color: $musta 
+		text-decoration: none
+
+img
+	max-width: 100%
+	height: auto
+	opacity: 1
+	border: 1px solid $tumma
+	margin-bottom: 5px
+
+h2, h3, h4
+	font-family: $otsikkofontti
+
+h1
+	font-size: 45px
+	font-family: $paaotsikkofontti 
+h2
+	font-size: 30px
+	font-weight: 300
+h3
+	font-size: 25px
+	font-weight: 300
+h4
+	font-size: 20px
+	font-weight: 300
+
+.main 
+	z-index: 90
+
+.row
+	width: $container-width
+	margin-left: 25%
+	z-index: 91
+	.mainrow
+		background: $harmaa
+		opacity: 0.9
+		margin: 100px 5px 5px 5px
+		z-index: 92
+	@media only screen and (max-width: $bp-navi)
+		margin: 0 auto
+		width: 75% 
+	@media only screen and (max-width: $bp-mobiili)
+		width: 100%
+		margin: 0 auto
+
+.content
+	padding: 30px
+	z-index: 91
+
+.mobile-bg
+	background: url('img/konton.jpg')
+	background-position: center
+	position: fixed
+	top: 0
+	left: 0
+	height: 100vh
+	width: 100vw
+	display: inline
+	display: none
+	margin: 0
+	border: 0
+	padding: 10px 10px 0px 0px
+	text-align: right
+	h1, h2
+		font-size: 38px
+	@media only screen and (max-width: $bp-navi)
+		display: block
+
+.nostorow
+	margin-top: 100px
+	z-index: 90
+	.nosto
+		padding: 5px
+		z-index: 90
+		.nostoblock
+			background: $harmaa
+			opacity: 0.9
+			padding: 30px
+			z-index: 90
+			margin-bottom: 15px
+			@media only screen and (min-width: 1800px)
+				padding: 50px
+		.linkkiblock
+			&:hover
+				background: $tumma
+
+.nostolink
+	a:hover
+		color: $white
+
+.eimarginaalia
+	margin-top: 10px !important
+
+.techicon
+	font-size: 25px
+
+html body .button-jst
+	width: 100% 
+	height: 40px
+	line-height: 40px
+	padding: 0 
+	text-align: center
+	background: $tumma
+	color: $white
+	border: 0
+	display: inline-block
+	margin: 5px 0px
+	&:hover
+		background: $musta
+
+
+html body .field-wrap
+	input[type="button"], button
+		width: 100% 
+		height: 40px
+		line-height: 40px
+		padding: 0 
+		text-align: center
+		background: $tumma
+		color: $white
+		border: 0
+		&:hover
+			background: $musta
+	input[type="text"], input[type="email"], input[type="tel"]
+		height: 40px
+		line-height: 40px
+		padding: 0px 5px
+		text-align: left 
+		border: 1px solid $tumma
+	textarea 
+		border: 1px solid $tumma
+
