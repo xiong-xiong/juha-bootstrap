@@ -23,9 +23,7 @@
 
   <!-- jQuery aktivointi joka varmistaa että scriptiä ei ajeta jo jossain plugarissa-->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<!--Bootstrap javascript -->
-    <script src="<?php bloginfo('template_url'); ?>/js/bootstrap.js"></script>
-     <script src="<?php bloginfo('template_url'); ?>/js/carousel.js"></script>
+
    
   </head>
   
@@ -37,7 +35,8 @@
 <header>
   <nav class="paanavi">
   <div class="kielivalinta"><?php dynamic_sidebar('language_sidebar'); ?></div>
-  <h1>Juha Stenroos</h1>
+  <h1 id="xiong-site-title"><?php bloginfo( 'name' ); ?></h1>
+  <h2 id="xiong-tagline"><?php bloginfo('description'); ?></h2>
     <div class="nav-wrap">
     <?php wp_nav_menu( array( 'theme_location' => 'paanavi', 'container_class' => 'main-nav', 'container' => 'nav' )); ?> 
     </div>  
@@ -49,6 +48,9 @@
     </div>
   </nav>
 </header>
-  <div class="menu-open"><i class="fa fa-bars"></i></div>
+  
 
-<div class="mobile-bg"><h2>Juha Stenroos</h2></div>
+<div class="menu-open"><i class="fa fa-bars"></i></div>
+<div class="xiong-mobile-header"><h1 id="xiong-mobile-site-title"><?php bloginfo( 'name' ); ?></h1></div>
+
+<!--<div class="mobile-bg"></div> -->

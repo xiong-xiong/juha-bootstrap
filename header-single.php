@@ -49,5 +49,6 @@
   </nav>
 </header>
   <div class="menu-open"><i class="fa fa-bars"></i></div>
+<div class="xiong-mobile-header"><h1 id="xiong-mobile-site-title"><?php bloginfo( 'name' ); ?></h1></div>
 
-<div class="mobile-bg"><h2>Juha Stenroos</h2></div>
+<!--<div class="mobile-bg"></div> -->

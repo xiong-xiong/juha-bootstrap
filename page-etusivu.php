@@ -10,21 +10,24 @@
     <div class="row nostorow">
 
       <div class="nosto col-md-8">
-        <article class="nostoblock">
-          <header><h2>Bio</h2></header>
-          <content>
-            <?php the_content( ); ?>
-          </content>
-        </article>
+        <aside>
+            <div id="juhablog-posts-container" class="nostolink"><!--Content comes from REST API --></div>
+            <div id="reseptitblog-posts-container" class="nostolink"><!--Content comes from REST API --></div>
+        </aside>
       </div>
 
       <div class="nosto col-md-4">
         <div class="nostoblock">
           <center>
-              <h2 id="eturightH1"><?php echo __(' [:fi]Ota yhteyttä[:]   
-                      [:en]Contact me[:] '); ?>
-              </h2>
+              
+              
             <img src="<?php bloginfo('template_url'); ?>/img/juha.jpg" id="juha" alt="Juha Stenroos">
+
+            <article>
+              <header><h2>Bio</h2></header>
+
+                <content><?php the_content( ); ?></content>
+            </article>
             <div>
               <a href="http://juhastenroos.fi/ota-yhteytta/" class="button-jst" id="front-yht-button">
                 <?php echo __(' [:fi]Ota yhteyttä[:]   
